@@ -187,9 +187,51 @@ class Backbone(Module):
                     m.bias.data.zero_()
 
 
+
+
+def IR_50(input_size):
+    """Constructs a ir-50 model.
+    """
+    model = Backbone(input_size, 50, 'ir')
+
+    return model
+
+
+def IR_101(input_size):
+    """Constructs a ir-101 model.
+    """
+    model = Backbone(input_size, 100, 'ir')
+
+    return model
+
+
+def IR_152(input_size):
+    """Constructs a ir-152 model.
+    """
+    model = Backbone(input_size, 152, 'ir')
+
+    return model
+
+
 def IR_SE_50(input_size):
     """Constructs a ir_se-50 model.
     """
     model = Backbone(input_size, 50, 'ir_se')
+
+    return model
+
+
+def IR_SE_101(input_size):
+    """Constructs a ir_se-101 model.
+    """
+    model = Backbone(input_size, 100, 'ir_se')
+
+    return model
+
+
+def IR_SE_152(input_size):
+    """Constructs a ir_se-152 model.
+    """
+    model = Backbone(input_size, 152, 'ir_se')
 
     return model
